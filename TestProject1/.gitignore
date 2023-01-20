@@ -1,0 +1,23 @@
+###################
+# compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+###############
+# Directories #
+###############
+bin/
+obj/
+###########
+# Files ###
+###########
+*.user
+Web.Release.config
+Web.Debug.config
+*.json
