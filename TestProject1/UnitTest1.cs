@@ -12,7 +12,10 @@ namespace TestProject1
         [SetUp]
         public void Setup()
         {
-            driver = new ChromeDriver();
+            ChromeOptions option = new ChromeOptions();
+            option.AddArguments("--headless");
+            driver = new ChromeDriver(option);
+
         }
 
         [Test]
