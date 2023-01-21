@@ -23,15 +23,8 @@ namespace TestProject1
         {
             driver.Navigate().GoToUrl("https://daktika.com/");
             driver.FindElement(By.Id("btn-decline-cookies")).Click();
-            Assert.That(driver.FindElement(By.CssSelector("h2")).Text, Is.EqualTo("¿Quieres que tus alumnos de programación aprendan más, mejor y más rápido?"));
-            var elements = driver.FindElements(By.CssSelector("h2"));
-            Assert.True(elements.Count > 0);
+            Assert.That(driver.FindElement(By.CssSelector(".btn-info")).Text, Is.EqualTo("REGISTRO DEL ESTUDIANTE"));
             driver.Close();
-
-
-            //Driver.FindElement(By.CssSelector(".nav-item:nth-child(2) img")).Click();
-            //Assert.That(Driver.FindElement(By.CssSelector("h2")).Text, Is.EqualTo("Do you want your programming students to learn more, better and faster?"));
-            //Driver.Close();
         }
     }
 }
