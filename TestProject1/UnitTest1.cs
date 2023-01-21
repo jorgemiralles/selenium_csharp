@@ -7,12 +7,12 @@ namespace TestProject1
     public class Tests
     {
 
-        public IWebDriver Driver;
+        //public IWebDriver Driver;
 
         [SetUp]
         public void Setup()
         {
-            Driver = new ChromeDriver();
+            //Driver = new ChromeDriver();
         }
 
         [Test]
