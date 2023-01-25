@@ -23,7 +23,7 @@ namespace TestProject1
         {
             driver.Navigate().GoToUrl("https://daktika.com/");
             driver.FindElement(By.Id("btn-decline-cookies")).Click();
-            Assert.That(driver.FindElement(By.CssSelector(".btn-info")).Text, Is.EqualTo("REGISTRO DEL ESTUDIANTE"));
+            Assert.That(driver.FindElement(By.CssSelector(".btn-info")).Text, Is.EqualTo("REGISTRO DEL ESTUDIANT"));
             driver.Close();
         }
 
